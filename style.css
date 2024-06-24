@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header i {
+  color: snow;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  background-color: rgb(170, 215, 200);
+  padding: 5px;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  align-items: center;
+  margin-top: 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+h1 {
+  display: inline-block;
+  padding: 5px 5px;
+  background-color: rgb(170, 215, 200);
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 5px;
+}
+
+header h2 {
+  color: white;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px; */
+  flex-wrap: wrap;
+}
+/* Section Trips */
+section {
+  background-color: whitesmoke;
+  margin: 10px;
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+section ul {
+  text-align: center;
+}
+
+section ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+cite p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+footer p {
+  color: snow;
+  padding: 10px;
+  font-size: 1.5rem;
+  transition: all 1s ease-in-out;
+  display: inline-block;
+  margin: 5px;
+}
+
+footer p:hover {
+  color: rgb(155, 209, 162);
+  background-color: snow;
+  border-radius: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 2rem;
+}
+
+footer ul li a {
+  font-size: 1.5rem;
+  color: snow;
+}
+
+footer ul li a:hover {
+  color: rgb(155, 209, 162);
+  transition: all 0.75s ease-in-out;
+}
+
+/* pop up */
+.popUpContainer {
+  left: 0;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#popupContent {
+  margin: auto;
+  background-color: snow;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+  }
+}
